@@ -1,0 +1,6 @@
+{
+  "name": "LLD Mentor – AI-Powered Low-Level Design Practice Platform",
+  "description": "An interactive Low-Level Design practice platform featuring structured design workspaces, deterministic validation, explainable rubric evaluations, and attempt history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
