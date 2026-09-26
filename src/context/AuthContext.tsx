@@ -49,11 +49,11 @@ interface AuthContextType {
 }
 
 const AuthContext = createContext<AuthContextType>({
-  user: DEMO_USERS[0],
+  user: null,
   login: () => {},
   loginDemo: () => {},
   logout: () => {},
-  isAuthenticated: true,
+  isAuthenticated: false,
 });
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -63,11 +63,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       try {
         return JSON.parse(saved);
       } catch {
-        return DEMO_USERS[0];
+        return null;
       }
     }
     // Default to active learner Alex Chen
-    return DEMO_USERS[0];
+    return null;
   });
 
   useEffect(() => {
